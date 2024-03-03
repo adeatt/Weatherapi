@@ -3,27 +3,27 @@
 
 def wdaten():
 
-    import requests     # mithilfe von "pip install requests" im cmd installiert 
+    import requests    
 
-    API_KEY = "1b5f6951299ca4f5fbbb95c619c374d6"
+    API_KEY = #"here should go the api key which is given by the api provider"
 
-    lat = "49.71754000"  # Beispiel Forchheim 
+    lat = "51.509865"  #London
 
-    lon = "11.05877000"  # Beispiel Forchheim
+    lon = "-0.118092"  # London
 
     requests_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}"
 
-    API_antwort = requests.get(requests_url) #befehl zum erhalten der daten von der api mit dem link(requests_url)
+    API_answer = requests.get(requests_url) 
         
-    data = API_antwort.json() #json ist das ausgabe format, anscheinend wichtig für das importieren der daten
+    data = API_answer.json() 
     
-    #print(data) # -> ausgabe aller daten
-    Wetter = data["weather"][0]["description"]
-    print(Wetter)
-    Tempc = round(data["main"]["temp"]-273.15) # temperatur wird in kelvin angegebn daher, -273.15
+    print(data) 
+    Weather = data["weather"][0]["description"]
+    print(Weather)
+    Tempc = round(data["main"]["temp"]-273.15) # from kelvin to celcius
     print(Tempc)
-    Windgeschwindigkeit = data["wind"]["speed"]
-    print(Windgeschwindigkeit)
+    Windspeed = data["wind"]["speed"]
+    print(Windspeed)
 
 wdaten()
 
