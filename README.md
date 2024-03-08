@@ -7,5 +7,5 @@ Modules: requests, csv, pyodbc, pandas
 It starts by getting the data via the request link and the Api key which is only avaible on the site of the api provider.
 Nothing to complicatet it just takes this info puts it into .json and prints it out. 
 
-Takes the data into a csv file and imports it into the database (working on it)
+Takes the data into a csv file and imports it into the AP1-E.accdb database (working on it)
 
