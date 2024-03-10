@@ -5,7 +5,7 @@ Disclaimer: This Project is only made for training purposes. Its not that eficie
 Modules: requests, pyodbc, pandas
 
 It starts by getting the data via the request link and the Api key which is only avaible on the site of the api provider. 
-Connects to the database via pyodbc and inserts the data.
+Connects to the database via pyodbc and inserts the data.(hopefully)
 
 
 
