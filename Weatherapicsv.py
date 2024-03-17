@@ -1,8 +1,5 @@
 import pyodbc
 import csv
-import urllib
-from sqlalchemy import create_engine
-import pandas as pd
 import requests     
 
 
